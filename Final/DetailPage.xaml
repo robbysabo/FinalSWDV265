@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Final.DetailPage"
+             Title="DetailPage">
+    <VerticalStackLayout>
+        <AbsoluteLayout>
+            <Button
+                Text="Back"
+                AbsoluteLayout.LayoutBounds="5,5,75,50"
+                Clicked="OnBackClicked"/>
+        </AbsoluteLayout>
+        <Image x:Name="img"
+            Source="car1.jpg"
+            HeightRequest="360"/>
+        <Label x:Name="title"
+               Text="Title"
+               Style="{StaticResource Headline}"
+               Margin="0,10,0,0"/>
+        <Label x:Name="price"
+               Text="Price"
+               Style="{StaticResource SubHeadline}"
+               FontAttributes="Bold"
+               Margin="0,10,0,0"/>
+        <Label x:Name="desc"
+               Text="desc" 
+               Style="{StaticResource Description}"
+               Margin="0,10,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

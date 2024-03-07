@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Black Modern Muscle Car",
+        "description": "Newest model of our Modern Muscles.",
+		"price": "$19,000.00",
+        "img": "1"
+    },
+    {
+        "name":"Black Sudan",
+        "description": "Great price on our Great sudan's.",
+		"price": "$17,500.00",
+        "img": "2"
+    },
+    {
+        "name":"Classic Muscle Car",
+        "description": "Feel the old age without feeling old age!",
+		"price": "$20,000.00",
+        "img": "3"
+    },
+    {
+        "name":"Sportest Sport Car",
+        "description": "Make sure to go the speed limit as much as possible. If it is possible!",
+		"price": "$16,750.00",
+        "img": "4"
+    },
+    {
+        "name":"Most Modern Car",
+        "description": "Drive home safe with the newest Modern Car.",
+		"price": "$18,000.00",
+        "img": "5"
+    }
+]

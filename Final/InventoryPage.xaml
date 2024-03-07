@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Final"
+             x:Class="Final.InventoryPage"
+             Title="InventoryPage">
+    <ContentPage.BindingContext>
+        <local:MyViewModel />
+    </ContentPage.BindingContext>
+    
+    <ScrollView>
+        <CollectionView x:Name="carCollection"
+                        ItemsSource="{Binding MyCarsList}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <ImageButton Source="{Binding img, StringFormat='car{0}.jpg'}"
+                                 CommandParameter="{Binding img}"
+                                 Command="{Binding Source={RelativeSource AncestorType={x:Type local:MyViewModel}}, Path=OnCarClicked}"
+                                 HeightRequest="360"
+                                 Padding="5"
+                                 />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ScrollView>
+</ContentPage>

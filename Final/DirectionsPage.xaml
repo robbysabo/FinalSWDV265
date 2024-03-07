@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Final.DirectionsPage"
+             Title="DirectionsPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Located At"
+            Style="{StaticResource Headline}" />
+
+        <Label
+            Text="1784 S Broadway Ave, Boise, ID 83706"
+            Style="{StaticResource SubHeadline}" 
+            Padding="5"/>
+
+        <Image
+            Source="map.jpg"
+            HeightRequest="360" />
+
+        <Label
+            Text="Located in Downtown Boise"
+            Style="{StaticResource Description}"
+            Padding="5"/>
+
+        <Label
+            Text="Call us at (800) 555 - 5555"
+            Style="{StaticResource Description}"
+            Padding="5"/>
+    </VerticalStackLayout>
+</ContentPage>
